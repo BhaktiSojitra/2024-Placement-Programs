@@ -26,7 +26,6 @@ public class program5{
                 min = arr[i];
             }
         }
-        System.out.println("max:- "+ max + " min:- " + min);
 
         int second_largest_element = 0;
         int second_smallest_element = max;
@@ -37,7 +36,6 @@ public class program5{
                 second_largest_element = arr[i];
             }
         }
-        System.out.println("second largest element:- " + second_largest_element);
 
         // Find the second smallest element
         for(int i = 0; i < arr.length; i++){
@@ -45,12 +43,10 @@ public class program5{
                 second_smallest_element = arr[i];
             }
         }
-
-        if (second_smallest_element == max)
-            second_smallest_element = 0;
-        else
-            System.out.println("second smallest element:- " + second_smallest_element);
-
+        
+        System.out.println("max:- "+ max + " min:- " + min);
+        System.out.println("second largest element:- " + second_largest_element);
+        System.out.println("second smallest element:- " + second_smallest_element);
         System.out.print("Difference:- " + (second_largest_element - second_smallest_element));
 
         sc.close();
